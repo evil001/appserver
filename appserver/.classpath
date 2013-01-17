@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resource"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/netty/netty/3.6.0.Final/netty-3.6.0.Final.jar" sourcepath="/M2_REPO/io/netty/netty/3.6.0.Final/netty-3.6.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/alibaba/fastjson/1.1.26/fastjson-1.1.26.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/oracle/ojdbc14/10.2.0.1.0/ojdbc14-10.2.0.1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.4/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-tx/3.1.1.RELEASE/spring-tx-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-aspects/3.1.1.RELEASE/spring-aspects-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-orm/3.1.1.RELEASE/spring-orm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-test/3.1.1.RELEASE/spring-test-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjrt/1.6.8/aspectjrt-1.6.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjweaver/1.6.8/aspectjweaver-1.6.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mybatis/mybatis/3.1.1/mybatis-3.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mybatis/mybatis-spring/1.1.1/mybatis-spring-1.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

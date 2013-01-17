@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhao.dao.AppServiceDao">
+
+    <resultMap type="CommonsModel" id="catelogResult">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="imageUrl" column="IMAGEURL"/>
+        <result property="imageUrl" column="IMAGE"/>
+        <result property="specailCode" column="SPECIAL_CODE"/>
+        <result property="catelogPrice" column="CATELOG_PRICE"/>
+        <result property="imageName" column="IMAGE_NAME"/>
+    </resultMap>
+    
+	<select id="queryAllCatelogInfo" resultMap="catelogResult">
+	    select sp.image imageurl from contractseason cs left join auction_specail sp on cs.seasoncode = sp.seasonid where sp.image is not null order by cs.years desc,cs.months desc
+	</select>
+	
+	<select id="queryAuctionByCatelog" parameterType="java.lang.String" resultMap="catelogResult">
+	    select au.image_name from auction au where au.specialcode=#{specialCode}
+	</select>
+	<!-- 
+   <select id='getUserById' parameterType='int' resultType='CommonsModel'>
+     SELECT
+      user_id as userId,
+      email_id as emailId ,
+      password,
+      first_name as firstName,
+      last_name as lastName
+     FROM USER
+     WHERE USER_ID = #{userId}
+  </select> -->
+  <!-- Instead of referencing Fully Qualified Class Names we can register Aliases in mybatis-config.xml and use Alias names. -->
+   <!-- <resultMap type='CommonsModel' id='UserResult'>
+    <id property='userId' column='user_id'/>
+    <result property='emailId' column='email_id'/>
+    <result property='password' column='password'/>
+    <result property='firstName' column='first_name'/>
+    <result property='lastName' column='last_name'/>  
+   </resultMap>
+ 
+  <select id='getAllUsers' resultMap='UserResult'>
+   SELECT * FROM USER
+  </select>
+ 
+  <insert id='insertUser' parameterType='CommonsModel' useGeneratedKeys='true' keyProperty='userId'>
+   INSERT INTO USER(email_id, password, first_name, last_name)
+    VALUES(#{emailId}, #{password}, #{firstName}, #{lastName})
+  </insert>
+ 
+  <update id='updateUser' parameterType='CommonsModel'>
+    UPDATE USER
+    SET
+     PASSWORD= #{password},
+     FIRST_NAME = #{firstName},
+     LAST_NAME = #{lastName}
+    WHERE USER_ID = #{userId}
+  </update>
+ 
+  <delete id='deleteUser' parameterType='int'>
+    DELETE FROM USER WHERE USER_ID = #{userId}
+  </delete> -->
+    
+</mapper>
